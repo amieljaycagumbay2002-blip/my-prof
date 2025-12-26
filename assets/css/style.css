@@ -1,0 +1,217 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ footer {
+  background: #222;
+  color: #fff;
+  padding: 20px;
+}
+
+.main_img{
+  display: flex;
+  justify-content: space-between;
+  background-color: #1a1d21;
+  padding:10px 10px 0 10px;
+}
+.img {
+  position: relative;
+  height: auto;
+}
+
+.first-img {
+  display: block;
+  padding-right: 100px;
+    /* adjust */
+  width: 400px;
+}
+
+.second-img {
+  position: absolute;
+  top: 80px;
+  left: 5px;
+  width: 400px; /* adjust same as first image */
+}
+
+
+.hello{
+  color: #fff;
+  padding: 0px 115px;
+}
+.dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #ff6a3d;
+ /* circle color */
+  border-radius: 50%;
+  color: white;               /* color of the period */
+  text-align: center;
+           /* vertically center the . */
+  font-weight: bold;
+}
+.line {
+  display: inline-block;
+  width: 120px;       /* length of the line */
+  border-bottom: 5px solid #ff6a3d; /* 5px = baga kaayo */
+  margin-right: 10px;
+}
+
+.hero_sec{
+  padding: 50px 0 0;
+}
+.im_aj{
+  color: #fff;
+  padding: 10px 0 10px;
+}
+.soft_dev{
+  padding: 20px 115px 20px;
+  font-size: 50px;
+  color: #fff;
+}
+.resume_pro{
+  display: flex;
+  gap: 20px;
+  padding: 0 120px;
+}
+.get_project{
+  background-color: #ff6a3d;
+  padding: 10px 16px;
+  color: #ffff;
+  border-radius: 5px;
+}
+.my_resume{
+ border-style: solid;
+border-color: rgba(255, 69, 0, 1);
+padding: 10px 20px;
+color: #ffff;
+ border-radius: 5px;
+  
+}
+
+.skill{
+  display: flex;
+  gap: 20px;
+  padding: 40px 120px;
+  justify-content: space-between; 
+  background-color: #2B3238;
+}
+.skill li{
+  list-style: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  text-shadow: 0 0 8px #ff6a3d, 
+               0 0 20px #ff6a3d, 
+               0 0 20px #ff6a3d;
+}
+/* =========================
+   TABLET VIEW
+   ========================= */
+@media screen and (max-width: 992px) {
+
+  .main_img {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hello,
+  .soft_dev,
+  .resume_pro {
+    padding: 0;
+  }
+
+  .resume_pro {
+    justify-content: center;
+  }
+  .img{
+    justify-content: center;
+  }
+
+  .first-img,
+  .second-img {
+    width: 300px;
+  }
+
+  .second-img {
+    top: 60px;
+    left: 0;
+  }
+
+  .skill {
+    padding: 30px 40px;
+    gap: 15px;
+  }
+
+  .skill li {
+    font-size: 18px;
+  }
+}
+
+
+/* =========================
+   MOBILE VIEW
+   ========================= */
+@media screen and (max-width: 600px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .main_img {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .hello {
+    padding: 0;
+    font-size: 28px;
+  }
+
+  .soft_dev {
+    padding: 0;
+    font-size: 32px;
+  }
+
+  .resume_pro {
+    padding: 0;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .resume_pro > div {
+    width: 80%;
+    text-align: center;
+  }
+
+  .first-img,
+  .second-img {
+    width: 250px;
+    padding: 0 20px;
+  }
+
+  .second-img {
+    top: 50px;
+    left: 0;
+  }
+
+  .skill {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .skill li {
+    width: 45%;
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
