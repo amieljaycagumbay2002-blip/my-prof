@@ -65,7 +65,14 @@ body {
 .im_aj{
   color: #fff;
   padding: 10px 0 10px;
+   display:flex;
+  align-items:center;
+  gap:10px;
 }
+.im_aj .line{
+  display:inline-block;
+}
+
 .soft_dev{
   padding: 20px 115px 20px;
   font-size: 50px;
@@ -81,6 +88,7 @@ body {
   padding: 10px 16px;
   color: #ffff;
   border-radius: 5px;
+  text-decoration: none;
 }
 .my_resume{
  border-style: solid;
@@ -88,6 +96,7 @@ border-color: rgba(255, 69, 0, 1);
 padding: 10px 20px;
 color: #ffff;
  border-radius: 5px;
+ text-decoration: none;
   
 }
 
@@ -172,7 +181,15 @@ color: #ffff;
     padding: 0;
     font-size: 28px;
   }
+   .im_aj{
+    flex-direction:column-reverse;
+    text-align:center;
+    gap:6px;
+  }
 
+  .im_aj .line{
+    width:80px;
+  }
   .soft_dev {
     padding: 0;
     font-size: 32px;
